@@ -1,12 +1,13 @@
+
+
 body {
     background: #F6F7F8;
     color: #011627;
     padding: 1%;
     font-family: 'Montserrat', sans-serif;
     font-weight:500;
-    width:1400px;
-    margin: 0 auto;
-
+    width:100%;
+    position: absolute;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,22 +31,13 @@ ul {
     color: #F6F7F8;
     padding: 20px;
     font-size:14px;
-
-}
-
-
-.content {
-    width: 48%;
-    margin-left: 2%;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .sidebar h3 {
     font-size: 21px;
 }
 
-.profile-info li i, .info li i, .interests li i, .about-me li i {
+.profile-info li i, .info li i, .interests li i {
     margin-right: 6px
 }
 
@@ -79,6 +71,7 @@ img {
 .profile-basic {
     position: absolute;
     bottom: 0px;
+    left:0;
     text-align:center;
     width:100%;
     background-color:#01162766;
@@ -100,6 +93,14 @@ img {
     font-weight: bold;
 }
 
+
+.content {
+    width: 48%;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: top;
+}
+
 .content i {
     color: #1E96FC;
 }
@@ -110,6 +111,11 @@ img {
     background: white;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
+
+.courses .info {
+	padding: 2%;
+}
+
 
 .info {
     padding: 2% 1%;
@@ -130,8 +136,11 @@ img {
     font-size:12px;
 }
 
+.courses .duration {
+    margin-bottom:0;
+}
 
-.profile-info ul, .skills-info ul, .languages-info ul, .interests ul, .about-me ul {
+.skills-info ul, .languages-info ul, .interests ul {
     list-style-type: none;
     padding: 0;
     text-align: justify;
@@ -139,11 +148,12 @@ img {
     text-justify: distribute-all-lines;
 }
 
-.about-me li {
-    font-size: 18px;
-    margin: 8px 0;
-    font-weight:700
-}
+.profile-info ul {
+	list-style-type: none;
+    padding: 0;
+    text-align:left
+    }
+
 
 .info ul {
     list-style-type: none;
@@ -177,12 +187,18 @@ img {
 .project-info, .education-info {
     display: flex;
     justify-content: space-between;
+	flex-wrap: wrap;
     padding-right: 20px;
 }
 
 .project, .education-info .info {
     width: 45%;
     padding: 2% 1%;
+
+}
+
+.project:nth-last-child(1) {
+	width: 100%;
 }
 
 .project-link {
@@ -191,35 +207,55 @@ img {
     margin-top: 10px;
     color: #1E96FC;
     font-weight:600;
+    font-size:13px
 }
+
+.project-link i {
+	font-size:13px;
+	}
 
 .project-link i {
     margin-right: 5px;
 }
 
 
-/* Mobile styles */
+@media screen and (max-width: 768px) {
 
-@media only screen and (max-width: 765px) {
-
-    body {
-        width: 100%;
-        padding:0;
-
+    .sidebar {
+        padding: 10px !important
     }
 
     .container {
-        padding: 0 10px;
+        margin:3px !important
+     }
+
+    .content {
+        margin-top: 0px !important;
     }
 
-    .sidebar, .content  {
-        width: calc(100%);
-        margin:10px 0;
-        padding: 0;
+    body {
+        margin: 0 !important;
     }
 
-    .project, .education-info .info, .project-info, .education-info {
-        width: 100%;
-        display: block;
+    .sidebar {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+
+    .content {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+
+    .project, .education-info .info {
+        width: 100% !important;
+    }
+
+
+    body {
+    position: initial !important;
     }
 }
