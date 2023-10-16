@@ -33,6 +33,8 @@ ul {
     font-size:14px;
 }
 
+
+
 .sidebar h3 {
     font-size: 21px;
 }
@@ -45,6 +47,17 @@ a {
     text-decoration: none;
     color: #F6F7F8;
     font-size: 15px
+}
+
+.about-me ul {
+	list-style:none;
+	padding-left:0;
+}
+
+.about-me li {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight:700
 }
 
 .skill-container, .language-container {
@@ -187,7 +200,7 @@ img {
 .project-info, .education-info {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap !important;
+	flex-wrap: wrap;
     padding-right: 20px;
 }
 
