@@ -55,7 +55,7 @@ ul {
     font-size: 15px;
 }
 
-.profile-info li i, .info li i, .interests li i, .download-links li i {
+.profile-info li i, .info li i, .interests li i {
     margin-right: 8px;
 }
 
@@ -67,17 +67,6 @@ a {
 
 .content a {
     color: #1E96FC;
-}
-
-.download-links {
-    list-style: none;
-    padding-left: 0;
-}
-
-.download-links li {
-    font-size: 17px;
-    margin: 8px 0;
-    font-weight: 700;
 }
 
 img {
