@@ -100,7 +100,11 @@ img {
     font-size: 28px;
 }
 
-.profile-info, .about-me, .skills-info, .languages-info {
+.languages-info {
+    padding: 12px 10px 12px 10px;
+}
+
+.profile-info, .about-me, .skills-info {
     padding: 12px 10px 12px 10px;
     border-bottom: 1px solid #F6F7F8;
 }
