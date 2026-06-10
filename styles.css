@@ -39,8 +39,8 @@ ul {
     display: inline-block;
     background: #011627;
     color: #F6F7F8;
-    padding: 15px;
-    font-size: 14px;
+    padding: 18px 15px;
+    font-size: 13px;
     vertical-align: top;
 }
 
@@ -107,7 +107,7 @@ img {
 
 .interests {
     border-bottom: none;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .content {
@@ -143,12 +143,12 @@ img {
 
 .sub-heading {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     margin: 10px 0 0 0;
 }
 
 .info p, .info ul, .project p, .course-card p {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .duration, .type {
@@ -275,14 +275,14 @@ img {
     line-height: 1.35;
 }
 
-.project-info, .education-info, .course-info {
+.project-info, .education-info, .course-info, .interests-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.project, .education-info .info, .course-info .course-card {
+.project, .education-info .info, .course-info .course-card, .interests-info article {
     width: calc(50% - 8px);
     padding: 0;
 }
